@@ -8,8 +8,13 @@ footer{
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     height: 40px;
+    border-top: 3.5px solid #861f2a; /* Blue solid border #3498db */
 }
-
+@media screen and (max-width: 600px) {
+    footer {
+      border-top-width: 2px; /* Thinner border on smaller screens */
+    }
+  }
 footer p{
     font-size: 17px;
 }

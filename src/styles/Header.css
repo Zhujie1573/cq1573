@@ -4,23 +4,33 @@
     overflow: hidden;
 }
 
+
 header ul{
     margin: 0;
     padding: 0;
     list-style: none; /* Removes default list styles */
 }
-
+  
 header{
     background:#ffffff;
     color:#000000;
     padding-top: 20px;
-    min-height: 70px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000; 
+    border-bottom: 3.5px solid #861f2a; /* Blue solid border #3498db */
+
+    
 }
+@media screen and (max-width: 600px) {
+    header {
+      border-bottom-width: 2px; /* Thinner border on smaller screens */
+    }
+  }
 header #branding{
     float: left;
     display: flex; /* Use flexbox to align logo and text */
@@ -86,3 +96,4 @@ header a:hover::after {
     width: 100%;
     background: #870000; /* Underline color */
 }
+

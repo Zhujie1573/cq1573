@@ -7,7 +7,7 @@ const words = {
     `,
     // You can add more content here as needed
     serious1:'泸州老窖·国窖1573系列重庆总经销商',
-    serious2:'泸州老窖紫砂大曲系列产品重庆分公司，泸州老窖·紫砂大曲系列重庆总经销商',
+    serious2: '泸州老窖·紫砂大曲系列产品重庆分公司<br>泸州老窖·紫砂大曲系列重庆总经销商',
     serious3:'泸州老窖·黑盖二曲酒重庆总经销商'
   };
   

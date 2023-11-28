@@ -1,8 +1,9 @@
 import Home from './pages/Home'
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Diary from './pages/Diary'
 import Develop from './pages/Develop';
+import ContactUsMain from './pages/ContactUsMain';
+import HirePage from './pages/HirePage';
 function App() {
   return (
     <div className="App">
@@ -10,8 +11,9 @@ function App() {
         <Routes>
           <Route index element={<Home />}/>
           <Route path='/home' element={<Home />}/>
-          <Route path='/diary' element={<Diary />}/>
+          <Route path='/hire' element={<HirePage />}/>
           <Route path='/develop' element={<Develop />}/>
+          <Route path='/contactus' element={<ContactUsMain />}/>
         </Routes>
       </BrowserRouter>
     </div>

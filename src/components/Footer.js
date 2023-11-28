@@ -3,11 +3,11 @@ import '../styles/Footer.css';
 
 function Footer() {
   return (
-    <div>
     <footer>
+    <div>
         <p>Copyright &copy; 2023 重庆乾阳酒类销售股份有限公司</p>
-    </footer>
     </div>
+    </footer>
   );
 }
 

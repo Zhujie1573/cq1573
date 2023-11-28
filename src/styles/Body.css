@@ -2,12 +2,12 @@
     width: 80%;
     margin: auto;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 #mainBack img {
     width: 100%;
     display: block;
-    margin-top: 80px;
 }
 
 #showcase {
@@ -28,25 +28,46 @@
     margin: 10px;
     padding: 0;
 }
+
+
+
 #seriess {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .series {
-    margin-bottom: 40px;
-  }
-  
-  .series img {
-    width: 100%; /* Adjust as needed */
-    max-width: 80px; /* Adjust as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .series p {
-    font-size: 20px; /* Adjust as needed */
-    color: #000000; /* Adjust color as needed */
-    margin-top: 10px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  grid-gap: 20px; /* Adjust the space between items as needed */
+  justify-content: center;
+  padding: 30px 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.series {
+  display: flex; /* Use flexbox for centering the content vertically */
+  flex-direction: column; /* Stack flex items (image and paragraph) vertically */
+  align-items: center; /* Center flex items horizontally */
+  justify-content: flex-start; /* Start flex items at the top */
+  height: 100%; /* Make sure each .series div is the same height */
+  margin-bottom: 40px;
+  flex: 1;
+}
+
+.series img {
+  width: 100%; /* This will make the image responsive within the container */
+  max-width: 80px; /* Keeps image width to a maximum of 80px */
+  height: auto;
+  margin-bottom: 20px; /* Create space between image and paragraph */
+}
+
+.series p {
+  font-size: 20px; /* Adjust as needed */
+  color: #000000; /* Adjust color as needed */
+  margin-top: 10px; /* Space at the top of the paragraph */
+  text-align: center; /* Center the text horizontally */
+}
+
+/* Add a fixed height to the images or an aspect ratio to ensure they are the same height */
+.series img {
+  aspect-ratio: 1; /* This will ensure that all images are the same shape */
+}
+
+

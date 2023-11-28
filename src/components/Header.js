@@ -16,8 +16,8 @@ function Header() {
                 <li className="current"><a href="/">公司首页</a></li>
                 <li><a href="/develop">产品介绍</a></li>
                 <li><a href="/develop">社会责任</a></li>
-                <li><a href="/develop">招贤纳士</a></li>
-                <li><a href="/develop">联系我们</a></li>
+                <li><a href="/hire">招贤纳士</a></li>
+                <li><a href="/contactus">联系我们</a></li>
             </ul>
         </nav>
       </div>

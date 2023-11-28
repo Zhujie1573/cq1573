@@ -1,18 +1,18 @@
 import React from 'react';
 import Header from '../components/Header';
-import Body from '../components/Body';
+import ContactMain from '../components/ContactMain';
 import Footer from '../components/Footer';
 import '../styles/Home.css';
 //import './App.css';
 
-function Home() {
+function ContactUsMain() {
   return (
     <div className="Home">
       <Header />
-      <Body />
+      <ContactMain />
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default ContactUsMain;
