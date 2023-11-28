@@ -1,0 +1,88 @@
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Removes default list styles */
+}
+
+header{
+    background:#ffffff;
+    color:#000000;
+    padding-top: 20px;
+    min-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+header #branding{
+    float: left;
+    display: flex; /* Use flexbox to align logo and text */
+    align-items: center; /* Center items vertically */
+}
+
+
+header #branding .logo {
+    max-height: 50px; /* Adjust as per your logo's dimensions */
+    margin-right: 15px; /* Space between logo and the company name */
+}
+header a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 4px 20px 0 20px;
+    position: relative; /* Position relative to allow absolute positioning of pseudo-elements */
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color:#870000;
+    font-weight: bold;
+}
+
+header a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    position: absolute; /* Position the pseudo-element at the bottom of li */
+    bottom: -10px; /* Adjust the position to suit your design */
+    left: 0;
+}
+
+header a:hover{
+    color: #870000;
+    font-weight: bold;
+}
+
+header a:hover::after {
+    width: 100%;
+    background: #870000; /* Underline color */
+}

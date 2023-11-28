@@ -1,0 +1,25 @@
+.devclass {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#dev {
+    min-height: 100px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px;
+}
+
+#dev h1 {
+    font-size: 50px;
+    margin: 10px;
+    padding: 0;
+}
+
+#dev p {
+    font-size: 25px;
+    margin: 10px;
+    padding: 0;
+}

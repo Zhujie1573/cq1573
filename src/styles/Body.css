@@ -1,0 +1,52 @@
+.bodycontainer {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#mainBack img {
+    width: 100%;
+    display: block;
+    margin-top: 80px;
+}
+
+#showcase {
+    min-height: 100px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#showcase h1 {
+    font-size: 35px;
+    margin: 10px;
+    padding: 0;
+}
+
+#showcase p {
+    font-size: 25px;
+    margin: 10px;
+    padding: 0;
+}
+#seriess {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .series {
+    margin-bottom: 40px;
+  }
+  
+  .series img {
+    width: 100%; /* Adjust as needed */
+    max-width: 80px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .series p {
+    font-size: 20px; /* Adjust as needed */
+    color: #000000; /* Adjust color as needed */
+    margin-top: 10px;
+  }
