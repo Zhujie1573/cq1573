@@ -2,13 +2,13 @@ footer{
     padding: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
-    color:#000000;
-    background-color: #ffffff;
+    color:#ffffff;
+    background-color: #3b3b3b;
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     height: 40px;
-    border-top: 3.5px solid #861f2a; /* Blue solid border #3498db */
+    border-top: 3px solid #666666; /* Blue solid border #3498db */
 }
 @media screen and (max-width: 600px) {
     footer {

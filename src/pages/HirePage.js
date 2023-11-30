@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import Header4 from '../components/Header4';
 import Footer from '../components/Footer';
 import '../styles/Home.css';
 import HireMain from '../components/HireMain';
@@ -8,7 +8,7 @@ import HireMain from '../components/HireMain';
 function HirePage() {
   return (
     <div className="Home">
-      <Header />
+      <Header4 />
       <HireMain />
       <Footer />
     </div>

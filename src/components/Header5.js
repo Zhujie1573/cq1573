@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Header.css';
 import logo from '../img/logo0.png'; // Make sure the path to the logo is correct
 
-function Header() {
+function Header4() {
   return (
     <header>
       <div className="container">
@@ -13,11 +13,11 @@ function Header() {
         
         <nav>
             <ul>
-                <li className="current"><a href="/">公司首页</a></li>
+                <li><a href="/">公司首页</a></li>
                 <li><a href="/product">产品介绍</a></li>
                 <li><a href="/duty">社会责任</a></li>
                 <li><a href="/hire">招贤纳士</a></li>
-                <li><a href="/contactus">联系我们</a></li>
+                <li className="current"><a href="/contactus">联系我们</a></li>
             </ul>
         </nav>
       </div>
@@ -25,4 +25,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header4;

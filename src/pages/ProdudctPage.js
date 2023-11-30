@@ -1,18 +1,18 @@
 import React from 'react';
-import Header5 from '../components/Header5';
-import ContactMain from '../components/ContactMain';
+import Header2 from '../components/Header2';
 import Footer from '../components/Footer';
 import '../styles/Home.css';
+import ProductMain from '../components/ProductMain';
 //import './App.css';
 
-function ContactUsMain() {
+function ProductPage() {
   return (
     <div className="Home">
-      <Header5 />
-      <ContactMain />
+      <Header2 />
+      <ProductMain />
       <Footer />
     </div>
   );
 }
 
-export default ContactUsMain;
+export default ProductPage;

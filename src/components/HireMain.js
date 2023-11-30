@@ -6,32 +6,42 @@ import '../styles/HireMain.css';
 
 
 const hiringPositions = [
-    { id: 1, title: '软件工程师', location: '纽约', salary: '$120,000 - $150,000', description: '详细职位描述 1...' },
-    { id: 2, title: '项目经理', location: '旧金山', salary: '$110,000 - $130,000', description: '详细职位描述 2...' },
+    { id: 1, title: '江北区销售经理', location: '江北区', salary: '3k-4k', description: '详细职位描述 1...' },
+    { id: 2, title: '巴南区销售经理', location: '巴南区·灵活办公', salary: '3k-4k', description: '详细职位描述 2...' },
     // ... 添加其他职位
-    { id: 3, title: '市场营销经理', location: '洛杉矶', salary: '¥300,000 - ¥400,000', description: '负责制定和执行市场营销策略...' },
-    { id: 4, title: '品酒师', location: '上海', salary: '¥200,000 - ¥300,000', description: '负责品尝和评估酒品质量...' },
-    { id: 5, title: '销售代表', location: '北京', salary: '¥150,000 - ¥250,000', description: '负责开发新客户和维护现有客户关系...' },
-    { id: 6, title: '供应链经理', location: '广州', salary: '¥250,000 - ¥350,000', description: '管理供应链操作，确保高效流程...' },
-    { id: 7, title: '酒吧经理', location: '深圳', salary: '¥180,000 - ¥280,000', description: '管理酒吧日常运营和员工...' },
-    { id: 8, title: '财务分析师', location: '杭州', salary: '¥220,000 - ¥320,000', description: '负责财务报告和数据分析...' },
-    { id: 9, title: '客户服务代表', location: '成都', salary: '¥140,000 - ¥240,000', description: '提供卓越的客户服务和支持...' },
-    { id: 10, title: '物流协调员', location: '重庆', salary: '¥160,000 - ¥260,000', description: '协调物流运输，确保及时交货...' }
+    { id: 3, title: '市场营销经理', location: '江北区·灵活办公', salary: '3k-4k', description: '详细职位描述...' },
+    { id: 4, title: '物流管理', location: '渝北区', salary: '3k-4k', description: '详细职位描述...' },
+    { id: 5, title: '商超部经理', location: '主城·灵活办公', salary: '3k-4k', description: '详细职位描述...' },
+    { id: 6, title: '紫砂大曲系列销售', location: '主城·灵活办公', salary: '3k-4k', description: '详细职位描述...' },
+    { id: 7, title: '国窖1573系列销售', location: '主城·灵活办公', salary: '3k-4k', description: '详细职位描述...' },
+    { id: 8, title: '财务出纳', location: '江北区', salary: '3k-4k', description: '详细职位描述...' },
+    { id: 9, title: '客户公关', location: '江北区', salary: '3k-4k', description: '详细职位描述...' },
+    { id: 10, title: '行政', location: '江北区', salary: '3k-4k', description: '详细职位描述...' }
   ];
 
   const HireMain = () => {
     const [selectedPosition, setSelectedPosition] = useState(null);
+    const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
     const handleClick = position => {
         setSelectedPosition(position === selectedPosition ? null : position);
+        setIsOverlayVisible(!isOverlayVisible);
     };
 
     const closeOverlay = () => {
         setSelectedPosition(null);
+        setIsOverlayVisible(false);
     };
 
     return (
       <div className="grid-container">
+        <div className="hiring-manager-info">
+          <h2>人事部经理：刘备</h2>
+          <p>联系电话：136-0000-0000</p>
+          <p>投递简历：email@email.com</p>
+          <p>经销商/终端供货：<a href="/contactus">联系我们</a></p>
+          {/* Add more information as needed */}
+        </div>
         {hiringPositions.map(position => (
           <div 
             key={position.id} 
@@ -43,6 +53,8 @@ const hiringPositions = [
             <p>{position.salary}</p>
           </div>
         ))}
+        <div className={`background-overlay ${isOverlayVisible ? 'visible' : 'hidden'}`} onClick={closeOverlay}></div>
+        <div className={`overlay ${isOverlayVisible ? 'visible' : 'hidden'}`}></div>
         {selectedPosition && (
         <>
         <div className="background-overlay" onClick={closeOverlay}></div>

@@ -1,0 +1,94 @@
+.duty-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 60px;
+    padding: 20px;
+    padding-left: 0px;
+    width: 80%;
+    margin: 0 auto; /* Center horizontally */
+    justify-content: center; /* Center grid items horizontally */
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.duty-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    height: auto; /* Height depends on the width */
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+    transition: transform 1.0s ease, box-shadow 1.0s ease; /* Smooth transition for hover effect */
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+.duty-card-bg-1 {
+    background-image: url('../img/七夕背景.jfif');
+    background-size: cover; /* Ensure the image covers the entire card */
+    background-position: center; /* Center the image */
+}
+
+.duty-card-bg-2 {
+    background-image: url('../img/小学背景.jfif');
+    background-size: cover;
+    background-position: center;
+}
+
+.duty-card-bg-3 {
+    background-image: url('../img/疫情背景.jfif');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.duty-card:hover {
+    transform: scale(1.25); /* Slightly scale up the card */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Deeper shadow on hover */
+}
+
+.duty-card h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffffff;
+}
+.duty-card a {
+    text-decoration: none; /* Removes the underline */
+}
+
+
+.duty-card .title, .duty-card .time {
+    color: #ffffff;
+    font-size: 24px;
+    
+}
+.duty-card .time {
+    font-weight: bold;
+}
+.duty-card h2, .duty-card .title, .duty-card .time {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .duty-container {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+        max-width: 300px;
+    }
+}
+.duty-card {
+    text-decoration: none; /* Removes the underline from links */
+}
+
+.duty-card:hover {
+    text-decoration: none; /* Ensures that the underline doesn't reappear on hover */
+}
+
+.duty-card h2, .duty-card .title, .duty-card .time {
+    text-decoration: none; /* Specifically ensures text within the card has no underline */
+}

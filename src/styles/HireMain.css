@@ -1,21 +1,39 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 50px;
     position: relative;
   }
-  
+ 
   .grid-item {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
     text-align: center;
-    transition: all 0.3s ease;
-    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+    background-color: #f9f9f9;
     cursor: pointer;
   }
+  .hiring-manager-info {
+    grid-column: 1 / -1; /* Spans across all columns */
+    background-color: #ffffffa1; /* Different background for distinction */
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Optional, for spacing */
+}
   
   .grid-item:hover {
     background-color: #f0f0f0;
+    transform: scale(1.05); /* Slightly scale up the card */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   }
   
   
@@ -25,18 +43,20 @@
   }
   .overlay {
     position: fixed;
-    top: 50%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     background-color: white;
     padding: 20px;
     width: 70%;
+    height: 60%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
 .overlay-content {
+    padding-top: 10%;
     text-align: center;
 }
 
@@ -52,4 +72,16 @@
     z-index: 9; /* Lower than the job description overlay */
     background-color: rgba(0, 0, 0, 0.5); /* Optional for a dimming effect */
 }
-  
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.3s ease;
+}
+
+/* Overlay visible state */
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 2.5s ease, visibility 0.5s ease;
+}

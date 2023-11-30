@@ -1,0 +1,73 @@
+/* Grid Container Styles */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 0px;
+    padding: 20px 0 0;
+    width: 100%;
+    margin: 30px auto 0px;
+    justify-content: center;
+}
+
+/* Card General Styles */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none; /* Common text-decoration for card */
+}
+
+/* Background Images for Specific Cards */
+.product-card-bg-1 { background-image: url('../img/1573系列.png') }
+.product-card-bg-2 { background-image: url('../img/紫砂大曲系列.jpg'); }
+.product-card-bg-3 { background-image: url('../img/黑盖.jpg'); }
+.product-card-bg-4 { background-image: url('../img/奔富.jpg'); }
+.product-card-bg-1, .product-card-bg-2, .product-card-bg-3,.product-card-bg-4 {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card Hover Effect */
+.product-card:hover {
+    transform: scale(1.25);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+/* Text Styles inside Cards */
+.product-card h2, .product-card .title, .product-card .time {
+    color: #ffffff;
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.8),-10px -10px 20px rgba(0,0,0,0.8);
+    text-decoration: none; /* Specifically ensures text has no underline */
+}
+.product-card h2 {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 32px;
+}
+.product-card .title, .product-card .time {
+    font-size: 24px;
+}
+.product-card .time {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .product-container {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin-top: 60px;
+        padding-right: 20px;
+    }
+}
