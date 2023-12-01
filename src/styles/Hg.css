@@ -1,0 +1,55 @@
+.hg-container {
+    width: 100%;
+    margin-top: auto;
+  }
+  .hg-responsive-image{
+    margin-bottom: 30px;
+  }
+  
+  .hg-responsive-image img{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+  
+  .hg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+  
+  .hg-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hg-image-box {
+    width: 90%;
+    height: auto; /* Height depends on the width */
+    aspect-ratio: 1 / 1;
+    background-image: url('../img/Heyguys.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hg-half-column {
+    flex: 1;
+  }
+
+ .hg-column p{
+    color: #333;
+    font-size: 18px;
+ }
+  
+  /* Responsive adjustments */
+  @media (max-width: 500px) {
+    .hg-grid {
+      grid-template-columns: 1fr;
+    }
+    .hg-responsive-image img{
+        margin-top: 90px;
+    }
+  }

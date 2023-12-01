@@ -3,8 +3,8 @@ import '../styles/ProductMain.css';
 
 function ProductMain() {
   const teamMembers = [
-    { id: 1, name: "泸州老窖·国窖1573系列", link: "/1573" },
-    { id: 2, name: "泸州老窖·紫砂大曲系列",link: "/大曲" },
+    { id: 1, name: "泸州老窖·国窖1573系列", link: "/guojiao1573" },
+    { id: 2, name: "泸州老窖·紫砂大曲系列",link: "/daqu" },
     { id: 3, name: "泸州老窖·黑盖二曲",  link: "/HeyGuys" },
     { id: 4, name: "其他产品",  link: "/otherProduct" }
   ];

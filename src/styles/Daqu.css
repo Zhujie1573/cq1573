@@ -1,6 +1,6 @@
-.duty-container {
+.daqu-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-columns: repeat(3, 1fr); /* Three columns for team members */
     gap: 60px;
     row-gap: 40px;
     padding: 20px;
@@ -12,7 +12,7 @@
     margin-bottom: 150px;
 }
 
-.duty-card {
+.daqu-card {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
@@ -28,88 +28,89 @@
     text-align: center; /* Center text horizontally */
 }
 
-.duty-card-bg-1 {
-    background-image: url('../img/七夕背景.jfif');
+.daqu-card-bg-1 {
+    background-image: url('../img/大曲.jpg');
     background-size: cover; /* Ensure the image covers the entire card */
     background-position: center; /* Center the image */
 }
 
-.duty-card-bg-2 {
-    background-image: url('../img/小学背景.jfif');
+.daqu-card-bg-2 {
+    background-image: url('../img/典藏1.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.duty-card-bg-3 {
-    background-image: url('../img/疫情背景.jfif');
+.daqu-card-bg-3 {
+    background-image: url('../img/天成.jpg');
     background-size: cover;
     background-position: center;
 }
 
 
-.duty-card:hover {
+.daqu-card:hover {
     transform: scale(1.25); /* Slightly scale up the card */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Deeper shadow on hover */
 }
 
-.duty-card h2 {
+.daqu-card h2 {
     margin-top: 0;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 38px;
     color: #ffffff;
 }
-.duty-card a {
+.daqu-card a {
     text-decoration: none; /* Removes the underline */
 }
 
 
-.duty-card .title, .duty-card .time {
+.daqu-card .title, .daqu-card .time {
     color: #ffffff;
     font-size: 24px;
     
 }
-.duty-card .time {
+.daqu-card .time {
     font-weight: bold;
 }
-.duty-card h2, .duty-card .title, .duty-card .time {
+.daqu-card h2, .daqu-card .title, .daqu-card .time {
     text-shadow: 10px 10px 20px rgba(0,0,0,0.8),-10px -10px 20px rgba(0,0,0,0.8);
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 600px) {
-    .duty-container {
+    .daqu-container {
         grid-template-columns: 1fr; /* One column for smaller screens */
         max-width: 300px;
     }
 }
-.duty-card {
+.daqu-card {
     text-decoration: none; /* Removes the underline from links */
 }
 
-.duty-card:hover {
+.daqu-card:hover {
     text-decoration: none; /* Ensures that the underline doesn't reappear on hover */
 }
 
-.duty-card h2, .duty-card .title, .duty-card .time {
+.daqu-card h2, .daqu-card .title, .daqu-card .time {
     text-decoration: none; /* Specifically ensures text within the card has no underline */
 }
 
-.duty-header {
+
+.daqu-header {
     grid-column: 1 / -1; /* Span across all columns in the first row */
     text-align: center;
     margin-bottom: 0px;
-    border-bottom: 5px solid #c62222;
+    border-bottom: 6px solid #D8A353;
 
 }
 
-.duty-title {
-    font-size: 38px; /* Large font size for the title */
+.daqu-title {
+    font-size: 48px; /* Large font size for the title */
     color: #333; /* Title color */
     margin-bottom: 0px; /* Space between title and description */
 }
 
-.duty-description {
-    font-size: 24px; /* Suitable size for the description */
+.daqu-description {
+    font-size: 30px; /* Suitable size for the description */
     color: #333; /* Description color */
-    font-weight: bold;
+    font-style: italic;
 }

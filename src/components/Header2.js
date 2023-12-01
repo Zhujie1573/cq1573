@@ -13,7 +13,7 @@ function Header2() {
         
         <nav>
             <ul>
-                <li><a href="/">公司首页</a></li>
+                <li><a href="/">首页</a></li>
                 <li className="current"><a href="/product">产品介绍</a></li>
                 <li><a href="/duty">社会责任</a></li>
                 <li><a href="/hire">招贤纳士</a></li>

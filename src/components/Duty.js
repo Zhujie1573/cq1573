@@ -19,6 +19,10 @@ function Duty() {
 
   return (
     <div className="duty-container">
+      <div className="duty-header">
+        <h1 className="duty-title">重庆乾阳积极承担社会责任</h1>
+        <p className="duty-description"></p>
+      </div>
     {teamMembers.map((member, index) => (
         <a href={member.link} className={`duty-card ${getBackgroundClass(index)}`} key={index}>
         <h2>{member.name}</h2>

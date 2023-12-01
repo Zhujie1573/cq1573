@@ -1,0 +1,55 @@
+.trdc-container {
+    width: 100%;
+    margin-top: auto;
+}
+.trdc-responsive-image {
+    margin-bottom: 30px;
+}
+
+.trdc-responsive-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.trdc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.trdc-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.trdc-image-box {
+    width: 90%;
+    height: auto; /* Height depends on the width */
+    aspect-ratio: 1 / 1.5;
+    background-image: url('../img/紫砂3.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.trdc-half-column {
+    flex: 1;
+}
+
+.trdc-column p {
+    color: #333;
+    font-size: 18px;
+}
+  
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .trdc-grid {
+      grid-template-columns: 1fr;
+    }
+    .trdc-responsive-image img {
+        margin-top: 90px;
+    }
+}
