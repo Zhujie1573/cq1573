@@ -3,9 +3,9 @@ import '../styles/Duty.css';
 
 function Duty() {
   const teamMembers = [
-    { id: 1, name: "七夕·巴渝浪漫", title: "渝中见证，浪漫满分", time: "2023.8", link: "/dutyPage1" },
-    { id: 2, name: "传承·祖国未来", title: "东水门小学阳光成长行动", time: "2023.3", link: "/dutyPage2" },
-    { id: 3, name: "抗疫·家国情怀", title: "凝心聚力众志成城", time:"2020.2", link: "/dutyPage3" }
+    { id: 1, name: "七夕·巴渝浪漫", title: "渝中见证，浪漫满分", time: "2023.8", link: "https://mp.weixin.qq.com/s/h7fTgsmnQyy71JZYzkn27g" },
+    { id: 2, name: "传承·祖国未来", title: "东水门小学阳光成长行动", time: "2023.3", link: "https://mp.weixin.qq.com/s/UwmzLlaFYn6PA-A6fLoevg" },
+    { id: 3, name: "抗疫·家国情怀", title: "凝心聚力众志成城", time:"2020.2", link: "https://mp.weixin.qq.com/s/mAF_B8bv3PpTh_DBNbiiAQ" }
   ];
 
   const getBackgroundClass = (index) => {
@@ -23,15 +23,16 @@ function Duty() {
         <h1 className="duty-title">重庆乾阳积极承担社会责任</h1>
         <p className="duty-description"></p>
       </div>
-    {teamMembers.map((member, index) => (
-        <a href={member.link} className={`duty-card ${getBackgroundClass(index)}`} key={index}>
-        <h2>{member.name}</h2>
-        <p className="title">{member.title}</p>
-        <p className="time">{member.time}</p>
+      {teamMembers.map((member, index) => (
+        <a href={member.link} target="_blank" rel="noopener noreferrer" className={`duty-card ${getBackgroundClass(index)}`} key={index}>
+          <h2>{member.name}</h2>
+          <p className="title">{member.title}</p>
+          <p className="time">{member.time}</p>
         </a>
-    ))}
+      ))}
     </div>
   );
 }
 
 export default Duty;
+

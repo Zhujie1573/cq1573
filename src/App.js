@@ -15,6 +15,9 @@ import HgPage from './pages/HeyGuysPage';
 import ZsdqPage from './pages/ZsdqPage';
 import TrdcPage from './pages/TrdcPage';
 import TrtcPage from './pages/TrtcPage';
+import SgbPage from './pages/SgbPage';
+import BaqiPage from './pages/BaqiPage';
+import JgPage from './pages/JgPage';
 function App() {
   return (
     <div className="App">
@@ -40,6 +43,9 @@ function App() {
           <Route path='/zisha-daqu' element={<ZsdqPage />}/>
           <Route path='/diancang' element={<TrdcPage />}/>
           <Route path='/tiancheng' element={<TrtcPage />}/>
+          <Route path='/shougong' element={<SgbPage />}/>
+          <Route path='/baqi' element={<BaqiPage />}/>
+          <Route path='/jiuguan' element={<JgPage />}/>
         </Routes>
       </BrowserRouter>
     </div>

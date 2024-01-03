@@ -29,19 +29,34 @@
 }
 
 .daqu-card-bg-1 {
-    background-image: url('../img/大曲.jpg');
+    background-image: url('../img/大曲新.jpg');
     background-size: cover; /* Ensure the image covers the entire card */
     background-position: center; /* Center the image */
 }
 
 .daqu-card-bg-2 {
-    background-image: url('../img/典藏1.jpg');
+    background-image: url('../img/典藏新.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .daqu-card-bg-3 {
-    background-image: url('../img/天成.jpg');
+    background-image: url('../img/天成新.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.daqu-card-bg-4 {
+    background-image: url('../img/手工版新.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.daqu-card-bg-5 {
+    background-image: url('../img/87新.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.daqu-card-bg-6 {
+    background-image: url('../img/紫砂酒馆新.jpg');
     background-size: cover;
     background-position: center;
 }

@@ -8,61 +8,72 @@
     justify-content: center;
     margin-top: 50px;
     position: relative;
+    margin-bottom: 200px;
   }
  
   .grid-item {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 0px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     transition: transform 0.7s ease, box-shadow 0.7s ease;
-    background-color: #f9f9f9;
+    background-color: #f9f9f99d;
     cursor: pointer;
+
   }
   .hiring-manager-info {
     grid-column: 1 / -1; /* Spans across all columns */
-    background-color: #ffffffa1; /* Different background for distinction */
-    border: 1px solid #ffffff;
-    border-radius: 4px;
+    background-color: #e2e0e049; /* Different background for distinction */
+    color: #ffffff;
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.8),-10px -10px 20px rgba(0,0,0,0.8);
+    margin-top: 70px;
+    border-radius: 0px;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px; /* Optional, for spacing */
+    margin-bottom: 70px; /* Optional, for spacing */
 }
-  
+.hiring-manager-info a {
+  color: #ffffff;
+}
   .grid-item:hover {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     transform: scale(1.05); /* Slightly scale up the card */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   }
   
   
   
-  .job-description {
-    margin-top: 20px;
-  }
   .overlay {
-    position: fixed;
-    top: 56%;
-    left: 50%;
+    position: fixed ;
+    top: 50%;        /* Centers vertically in the viewport */
+    left: 50%;   
     transform: translate(-50%, -50%);
     z-index: 10;
     background-color: white;
     padding: 20px;
     width: 70%;
-    height: 60%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
 .overlay-content {
-    padding-top: 10%;
     text-align: center;
+    
 }
+
 
 .job-description {
     margin-top: 20px;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+.job-description p {
+  text-align: left;
+}
+
 .background-overlay {
     position: fixed;
     top: 0;
@@ -81,7 +92,28 @@
 
 /* Overlay visible state */
 .visible {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  width: 100%;
+  visibility:hidden;
   transition: opacity 2.5s ease, visibility 0.5s ease;
+}
+@media (max-width: 600px) {
+  .overlay {
+    grid-column: 1 / -1;
+    max-width: 300px;
+    overflow-y: auto;
+    position: sticky;
+    margin-left: 50%;
+    margin-top: -200px;
+  }
+  .overlay-content {
+    text-align: center;
+    overflow-y: auto;
+}
+  .job-description {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.grid-container{
+}
 }

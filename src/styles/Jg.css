@@ -1,0 +1,55 @@
+.jg-container {
+    width: 100%;
+    margin-top: auto;
+}
+.jg-responsive-image {
+    margin-bottom: 30px;
+}
+
+.jg-responsive-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.jg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.jg-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.jg-image-box {
+    width: 90%;
+    height: auto; /* Height depends on the width */
+    aspect-ratio: 1 / 1.5;
+    background-image: url('../img/酒馆小.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.jg-half-column {
+    flex: 1;
+}
+
+.jg-column p {
+    color: #333;
+    font-size: 18px;
+}
+  
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .jg-grid {
+      grid-template-columns: 1fr;
+    }
+    .jg-responsive-image img {
+        margin-top: 90px;
+    }
+}

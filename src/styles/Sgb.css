@@ -1,0 +1,55 @@
+.sgb-container {
+    width: 100%;
+    margin-top: auto;
+}
+.sgb-responsive-image {
+    margin-bottom: 30px;
+}
+
+.sgb-responsive-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.sgb-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.sgb-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.sgb-image-box {
+    width: 90%;
+    height: auto; /* Height depends on the width */
+    aspect-ratio: 1 / 1.5;
+    background-image: url('../img/手工小.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.sgb-half-column {
+    flex: 1;
+}
+
+.sgb-column p {
+    color: #333;
+    font-size: 18px;
+}
+  
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .sgb-grid {
+      grid-template-columns: 1fr;
+    }
+    .sgb-responsive-image img {
+        margin-top: 90px;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Hy.css'; // Make sure to use the correct path for your CSS file
-import backgroundImage from '../img/国窖背景.jpg';
+import backgroundImage from '../img/鸿运长.jpg';
 
 function Hy() {
   return (
@@ -11,7 +11,7 @@ function Hy() {
 
       <div className="hy-grid">
         <div className="hy-column">
-          <h2>国窖1573·经典装</h2>
+          <h2>国窖1573·鸿运568</h2>
           <div className="hy-image-box"></div>
         </div>
 

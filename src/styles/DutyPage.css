@@ -1,0 +1,10 @@
+.Duty {
+    display: flex;
+    flex-direction: column;
+  }
+.Duty {
+    background-image: url('../img/小学信.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

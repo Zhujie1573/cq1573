@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Guojiao.css';
+import backgroundImage from '../img/国窖背景.jpg';
 
 function Guojiao() {
   const teamMembers = [
@@ -18,16 +19,21 @@ function Guojiao() {
   };
 
   return (
+    <div>
+      <section id="gjBack">
+          <img src={backgroundImage} alt="Background" />
+        </section>
     <div className="gj-container">
+      
        <div className="gj-header">
         <h1 className="gj-title">泸州老窖·国窖1573系列</h1>
-        <p className="gj-description">你能品味的历史</p>
       </div>
     {teamMembers.map((member, index) => (
         <a href={member.link} className={`gj-card ${getBackgroundClass(index)}`} key={index}>
-        <h2>{member.name}</h2>
+          <p>{member.name}</p>
         </a>
     ))}
+    </div>
     </div>
   );
 }

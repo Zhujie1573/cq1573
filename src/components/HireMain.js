@@ -2,22 +2,21 @@
 
 import React, { useState } from 'react';
 import '../styles/HireMain.css';
-
+import words from './Words.js';
 
 
 const hiringPositions = [
-    { id: 1, title: '江北区销售经理', location: '江北区', salary: '3k-4k', description: '详细职位描述 1...' },
-    { id: 2, title: '巴南区销售经理', location: '巴南区·灵活办公', salary: '3k-4k', description: '详细职位描述 2...' },
-    // ... 添加其他职位
-    { id: 3, title: '市场营销经理', location: '江北区·灵活办公', salary: '3k-4k', description: '详细职位描述...' },
-    { id: 4, title: '物流管理', location: '渝北区', salary: '3k-4k', description: '详细职位描述...' },
-    { id: 5, title: '商超部经理', location: '主城·灵活办公', salary: '3k-4k', description: '详细职位描述...' },
-    { id: 6, title: '紫砂大曲系列销售', location: '主城·灵活办公', salary: '3k-4k', description: '详细职位描述...' },
-    { id: 7, title: '国窖1573系列销售', location: '主城·灵活办公', salary: '3k-4k', description: '详细职位描述...' },
-    { id: 8, title: '财务出纳', location: '江北区', salary: '3k-4k', description: '详细职位描述...' },
-    { id: 9, title: '客户公关', location: '江北区', salary: '3k-4k', description: '详细职位描述...' },
-    { id: 10, title: '行政', location: '江北区', salary: '3k-4k', description: '详细职位描述...' }
-  ];
+  { 
+    id: 1, 
+    title: '酒水销售代表', 
+    location: '重庆主城各区及外埠', 
+    salary: '4k-8k/12薪', 
+    description: words.job1
+  },
+  // ... add other positions here
+];
+
+
 
   const HireMain = () => {
     const [selectedPosition, setSelectedPosition] = useState(null);
@@ -36,10 +35,10 @@ const hiringPositions = [
     return (
       <div className="grid-container">
         <div className="hiring-manager-info">
-          <h2>人事部经理：刘备</h2>
-          <p>联系电话：136-0000-0000</p>
-          <p>投递简历：email@email.com</p>
-          <p>经销商/终端供货：<a href="/contactus">联系我们</a></p>
+          <h2>人事部经理：刘利</h2>
+          <p>联系电话：023-67701599</p>
+          <p>投递简历：861216011@qq.com</p>
+          <p>经销商/终端合作：<a href="/contactus">联系我们</a></p>
           {/* Add more information as needed */}
         </div>
         {hiringPositions.map(position => (
@@ -63,7 +62,7 @@ const hiringPositions = [
               <h2>{selectedPosition.title}</h2>
               <p>{selectedPosition.location}</p>
               <p>{selectedPosition.salary}</p>
-              <p className="job-description">{selectedPosition.description}</p>
+              <p className="job-description" dangerouslySetInnerHTML={{ __html:selectedPosition.description }}></p>
             </div>
           </div>
         </>

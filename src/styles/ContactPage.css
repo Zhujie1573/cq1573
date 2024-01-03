@@ -1,0 +1,10 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+  }
+.Contact {
+    background-image: url('../img/中式背景.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

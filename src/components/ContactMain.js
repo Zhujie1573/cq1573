@@ -3,10 +3,12 @@ import '../styles/Contact.css';
 
 function ContactMain() {
   const teamMembers = [
-    { name: "刘备", title: "人事部经理", description: "*添加职位描述*.", phone: "139-0000-0000" },
-    { name: "关羽", title: "紫砂大曲产品经理", description: "*添加职位描述*", phone: "139-0000-0000" },
-    { name: "张飞", title: "国窖1573产品经理", description: "*添加职位描述*", phone: "139-0000-0000" },
-    { name: "诸葛亮", title: "消费者业务经理", description: "*添加职位描述*", phone: "139-0000-0000" }
+    { name: "刘进", title: "总经理", description: "*添加职位描述*.", phone: "023-67701599" },
+    { name: "蒋赖", title: "紫砂大曲品牌经理", description: "*添加职位描述*", phone: "023-67701599" },
+    { name: "向双", title: "陶然典藏品牌经理", description: "*添加职位描述*", phone: "023-67701599" },
+    { name: "陈道翔", title: "国窖1573品牌经理", description: "*添加职位描述*", phone: "023-67701599" },
+    { name: "马海鹏", title: "酒店部经理", description: "*添加职位描述*", phone: "023-67701599" },
+    { name: "刘利", title: "人事部经理", description: "*添加职位描述*", phone: "023-67701599" },
   ];
 
   return (
@@ -15,8 +17,7 @@ function ContactMain() {
         <div className="contact-card" key={index}>
           <h2>{member.name}</h2>
           <p className="title">{member.title}</p>
-          <p>{member.description}</p>
-          <p>电话: {member.phone}</p>
+          <p>联系方式: {member.phone}</p>
         </div>
       ))}
     </div>

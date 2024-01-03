@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Zgpw.css'; // Make sure to use the correct path for your CSS file
-import backgroundImage from '../img/国窖背景.jpg';
+import backgroundImage from '../img/品味装横版.jpg';
 
 function Zgpw() {
   return (

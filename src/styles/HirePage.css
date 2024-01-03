@@ -1,0 +1,10 @@
+.Hire {
+    display: flex;
+    flex-direction: column;
+  }
+.Hire {
+    background-image: url('../img/窖池.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
